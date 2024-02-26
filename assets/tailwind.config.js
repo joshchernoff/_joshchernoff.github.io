@@ -1,7 +1,7 @@
 module.exports = {
   content: [
     "./**/*.js",
-    "../lib/acap.ex",
+    "../lib/joshchernoff.ex",
     "../content_src/**/*.md"
   ],
   plugins: [

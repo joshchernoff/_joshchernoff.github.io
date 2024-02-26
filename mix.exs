@@ -7,6 +7,7 @@ defmodule Joshchernoff.MixProject do
       version: "0.1.0",
       elixir: "~> 1.16",
       start_permanent: Mix.env() == :prod,
+      aliases: aliases(),
       deps: deps()
     ]
   end
@@ -26,6 +27,12 @@ defmodule Joshchernoff.MixProject do
       {:esbuild, "~> 0.8.1"},
       {:tailwind, "~> 0.2.2"},
       {:yaml_elixir, "~> 2.9.0"}
+    ]
+  end
+
+  defp aliases() do
+    [
+      "site.build": ["build", "tailwind default --minify", "esbuild default --minify"]
     ]
   end
 end

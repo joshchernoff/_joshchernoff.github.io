@@ -29,4 +29,9 @@ joshchernoff-*.tar
 
 /assets/node_modules/
 
-/output/
+
+!/output/
+/output/**
+!/output/assets/
+!/output/assets/images**
+

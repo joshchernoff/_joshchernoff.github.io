@@ -3,7 +3,7 @@ defmodule Joshchernoff.Post do
   defstruct [:id, :author, :title, :body, :description, :tags, :date, :path, :wrapper_class]
 
   def build(filename, attrs, body) do
-    path = Path.rootname(filename)
+    "content_src/" <> path = Path.rootname(filename)
     [year, month_day_id] = path |> Path.split() |> Enum.take(-2)
     path = path <> ".html"
     [month, day, id] = String.split(month_day_id, "-", parts: 3)
