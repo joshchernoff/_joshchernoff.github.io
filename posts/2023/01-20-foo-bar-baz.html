@@ -1,0 +1,531 @@
+<!doctype html>
+<html data-theme="light">
+  <head>
+
+  <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/images/JoshchernoffLogo.png" type="image/x-icon">
+    <title>Just another test post | Josh Chernoff</title>
+    <link rel="stylesheet" href="/assets/app.css">
+    <script type="text/javascript" src="/assets/app.js"></script>
+  </head>
+
+  <body>
+    <div class="drawer">
+      <input id="mobile-drawer" type="checkbox" class="drawer-toggle">
+      <div class="drawer-content">
+        <!-- Main Nav -->
+        <div class="navbar bg-base-100 z-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16"></path>
+                </svg>
+              </div>
+              <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+               
+                  <li><a href='/blog.html'>Blog</a></li>
+               
+                  <li>
+  <a>About</a>
+  <ul class="p-2">
+    <li><a href='/contact.html'>Contact</a></li><li><a href='/about.html'>About Me</a></li>
+  </ul>
+</li>
+
+               
+                  <li><a href='https://github.com/joshchernoff/joshchernoff.github.io'>Source</a></li>
+               
+              </ul>
+            </div>
+            <a href="/" class="-m-1.5 p-1.5">
+              <span class="sr-only">Josh Chernoff</span>
+              <img class="hidden md:inline w-[350px] mr-2" src="/images/JoshchernoffHeadImg.jpg" alt="">
+              <img class="inline md:hidden h-8 w-auto mr-2" src="/images/JoshchernoffLogo.png" alt="">
+            </a>
+          </div>
+
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 z-10">
+              
+                <li><a href='/blog.html'>Blog</a></li>
+              
+                <li class="dropdown dropdown-hover mt-[2px]">
+  <div tabindex="0" role="button" class="btn btn-ghost rounded-btn btn-sm">About</div>
+  <ul tabindex="0" class="dropdown-content bg-base-100 p-3 pt-4">
+    <li><a href='/contact.html'>Contact</a></li><li><a href='/about.html'>About Me</a></li>
+  </ul>
+</li>
+
+              
+                <li><a href='https://github.com/joshchernoff/joshchernoff.github.io'>Source</a></li>
+              
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <div class="dropdown hidden md:block">
+              <div tabindex="0" role="button" class="btn m-1">
+                Theme
+                <svg width="12px" height="12px" class="h-2 w-2 fill-current opacity-60 inline-block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 2048">
+                  <path d="M1799 349l242 241-1017 1017L7 590l242-241 775 775 775-775z"></path>
+                </svg>
+              </div>
+              <ul tabindex="0" class="dropdown-content z-[1] p-2 shadow-2xl bg-base-300 rounded-box w-52">
+                <li><input type="radio" name="theme-dropdown" class="theme-controller btn btn-sm btn-block btn-ghost justify-start" aria-label="Light" value="light"></li>
+                <li><input type="radio" name="theme-dropdown" class="theme-controller btn btn-sm btn-block btn-ghost justify-start" aria-label="Dark" value="dark">
+                </li>
+                <li><input type="radio" name="theme-dropdown" class="theme-controller btn btn-sm btn-block btn-ghost justify-start" aria-label="Cupcake" value="cupcake"></li>
+                <li><input type="radio" name="theme-dropdown" class="theme-controller btn btn-sm btn-block btn-ghost justify-start" aria-label="Bumblebee" value="bumblebee"></li>
+                <li><input type="radio" name="theme-dropdown" class="theme-controller btn btn-sm btn-block btn-ghost justify-start" aria-label="Emerald" value="emerald"></li>
+                <li><input type="radio" name="theme-dropdown" class="theme-controller btn btn-sm btn-block btn-ghost justify-start" aria-label="Corporate" value="corporate"></li>
+                <li><input type="radio" name="theme-dropdown" class="theme-controller btn btn-sm btn-block btn-ghost justify-start" aria-label="Synthwave" value="synthwave"></li>
+                <li><input type="radio" name="theme-dropdown" class="theme-controller btn btn-sm btn-block btn-ghost justify-start" aria-label="Retro" value="retro"></li>
+                <li><input type="radio" name="theme-dropdown" class="theme-controller btn btn-sm btn-block btn-ghost justify-start" aria-label="Cyberpunk" value="cyberpunk"></li>
+                <li><input type="radio" name="theme-dropdown" class="theme-controller btn btn-sm btn-block btn-ghost justify-start" aria-label="Valentine" value="valentine"></li>
+                <li><input type="radio" name="theme-dropdown" class="theme-controller btn btn-sm btn-block btn-ghost justify-start" aria-label="Halloween" value="halloween"></li>
+                <li><input type="radio" name="theme-dropdown" class="theme-controller btn btn-sm btn-block btn-ghost justify-start" aria-label="Garden" value="garden"></li>
+                <li><input type="radio" name="theme-dropdown" class="theme-controller btn btn-sm btn-block btn-ghost justify-start" aria-label="Forest" value="forest"></li>
+                <li><input type="radio" name="theme-dropdown" class="theme-controller btn btn-sm btn-block btn-ghost justify-start" aria-label="Aqua" value="aqua">
+                </li>
+                <li><input type="radio" name="theme-dropdown" class="theme-controller btn btn-sm btn-block btn-ghost justify-start" aria-label="LoFi" value="lofi">
+                </li>
+                <li><input type="radio" name="theme-dropdown" class="theme-controller btn btn-sm btn-block btn-ghost justify-start" aria-label="Pastel" value="pastel"></li>
+                <li><input type="radio" name="theme-dropdown" class="theme-controller btn btn-sm btn-block btn-ghost justify-start" aria-label="Fantasy" value="fantasy"></li>
+                <li><input type="radio" name="theme-dropdown" class="theme-controller btn btn-sm btn-block btn-ghost justify-start" aria-label="WireFrame" value="wireframe"></li>
+                <li><input type="radio" name="theme-dropdown" class="theme-controller btn btn-sm btn-block btn-ghost justify-start" aria-label="Black" value="black"></li>
+                <li><input type="radio" name="theme-dropdown" class="theme-controller btn btn-sm btn-block btn-ghost justify-start" aria-label="Luxury" value="luxury"></li>
+                <li><input type="radio" name="theme-dropdown" class="theme-controller btn btn-sm btn-block btn-ghost justify-start" aria-label="Dracula" value="dracula"></li>
+                <li><input type="radio" name="theme-dropdown" class="theme-controller btn btn-sm btn-block btn-ghost justify-start" aria-label="CMYK" value="cmyk">
+                </li>
+                <li><input type="radio" name="theme-dropdown" class="theme-controller btn btn-sm btn-block btn-ghost justify-start" aria-label="Autumn" value="autumn"></li>
+                <li><input type="radio" name="theme-dropdown" class="theme-controller btn btn-sm btn-block btn-ghost justify-start" aria-label="Business" value="business"></li>
+                <li><input type="radio" name="theme-dropdown" class="theme-controller btn btn-sm btn-block btn-ghost justify-start" aria-label="aqua" value="light">
+                </li>
+              </ul>
+            </div>
+            <label class="flex cursor-pointer gap-2 mr-8">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="5"></circle>
+                <path d="M12 1v2M12 21v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1 12h2M21 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"></path>
+              </svg>
+              <input type="checkbox" value="dark" class="toggle theme-controller">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+              </svg>
+            </label>
+          </div>
+        </div>
+
+        <div class="prose lg:prose-lg mx-auto py-20">
+          
+  <h2>
+Heres a great example of all the different styles markdown can offer.</h2>
+<p>
+Text can be <strong>bold</strong>, <em>italic</em>, or <del>strikethrough</del>.</p>
+<p>
+There should be whitespace between paragraphs.</p>
+<p>
+There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.</p>
+<h1>
+<a href="#header-1"></a>Header 1</h1>
+<p>
+This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.</p>
+<h2>
+<a href="#header-2"></a>Header 2</h2>
+<blockquote>
+  <p>
+This is a blockquote following a header.  </p>
+  <p>
+When something is important enough, you do it even if the odds are not in your favor.  </p>
+</blockquote>
+<h4>
+<a href="#header-4-with-code-not-transformed"></a>Header 4 <code class="inline">with code not transformed</code></h4>
+<ul>
+  <li>
+  This is an unordered list following a header.  </li>
+  <li>
+  This is an unordered list following a header.  </li>
+  <li>
+  This is an unordered list following a header.  </li>
+</ul>
+<h5>
+<a href="#header-5"></a>Header 5</h5>
+<ol>
+  <li>
+ This is an ordered list following a header.  </li>
+  <li>
+ This is an ordered list following a header.  </li>
+  <li>
+ This is an ordered list following a header.  </li>
+</ol>
+<h6>
+<a href="#header-6"></a>Header 6</h6>
+<p>
+<a href=".">This is a very long link which wraps and therefore doesn’t overflow
+even when it comes at the beginning</a> of the line.</p>
+<ul>
+  <li>
+<a href=".">This is a very long link which wraps and therefore doesn’t overflow the line
+when used first in an item </a> in a list.  </li>
+</ul>
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left;">
+head1      </th>
+      <th style="text-align: left;">
+head two      </th>
+      <th style="text-align: left;">
+three      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left;">
+ok      </td>
+      <td style="text-align: left;">
+good swedish fish      </td>
+      <td style="text-align: left;">
+nice      </td>
+    </tr>
+    <tr>
+      <td style="text-align: left;">
+out of stock      </td>
+      <td style="text-align: left;">
+good and plenty      </td>
+      <td style="text-align: left;">
+nice      </td>
+    </tr>
+    <tr>
+      <td style="text-align: left;">
+ok      </td>
+      <td style="text-align: left;">
+good <code class="inline">oreos</code>      </td>
+      <td style="text-align: left;">
+hmm      </td>
+    </tr>
+    <tr>
+      <td style="text-align: left;">
+ok      </td>
+      <td style="text-align: left;">
+good <code class="inline">zoute</code> drop      </td>
+      <td style="text-align: left;">
+yumm      </td>
+    </tr>
+  </tbody>
+</table>
+<h3>
+There’s a horizontal rule below this.</h3>
+<hr class="thick">
+<h3>
+Here is an unordered list:</h3>
+<ul>
+  <li>
+  Item foo  </li>
+  <li>
+  Item bar  </li>
+  <li>
+  Item baz  </li>
+  <li>
+  Item zip  </li>
+</ul>
+<h3>
+And an ordered list:</h3>
+<ol>
+  <li>
+ Item one  </li>
+  <li>
+ Item two  </li>
+  <li>
+ Item three  </li>
+  <li>
+ Item four  </li>
+</ol>
+<h3>
+And an ordered list, continued:</h3>
+<ol>
+  <li>
+ Item one  </li>
+  <li>
+ Item two  </li>
+</ol>
+<p style="counter-reset:none">
+Some text</p>
+<ol>
+  <li>
+ Item three  </li>
+  <li>
+ Item four  </li>
+</ol>
+<h3 style="counter-reset:step-counter 41">
+And an ordered list starting from 42:</h3>
+<ol>
+  <li>
+ Item 42  </li>
+  <li>
+ Item 43  </li>
+  <li>
+ Item 44  </li>
+</ol>
+<h3>
+And a nested list:</h3>
+<ul>
+  <li>
+level 1 item    <ul>
+      <li>
+level 2 item      </li>
+      <li>
+level 2 item        <ul>
+          <li>
+level 3 item          </li>
+          <li>
+level 3 item          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+level 1 item    <ul>
+      <li>
+level 2 item      </li>
+      <li>
+level 2 item      </li>
+      <li>
+level 2 item      </li>
+    </ul>
+  </li>
+  <li>
+level 1 item    <ul>
+      <li>
+level 2 item      </li>
+      <li>
+level 2 item      </li>
+    </ul>
+  </li>
+  <li>
+level 1 item  </li>
+</ul>
+<h3>
+Nesting an ol in ul in an ol</h3>
+<ul>
+  <li>
+level 1 item (ul)    <ol>
+      <li>
+level 2 item (ol)      </li>
+      <li>
+level 2 item (ol)      </li>
+    </ol>
+    <ul>
+      <li>
+level 3 item (ul)      </li>
+      <li>
+level 3 item (ul)      </li>
+    </ul>
+  </li>
+  <li>
+level 1 item (ul)    <ol>
+      <li>
+level 2 item (ol)      </li>
+      <li>
+level 2 item (ol)      </li>
+    </ol>
+    <ul>
+      <li>
+level 3 item (ul)      </li>
+      <li>
+level 3 item (ul)      </li>
+    </ul>
+    <ol>
+      <li>
+level 4 item (ol)      </li>
+      <li>
+level 4 item (ol)      </li>
+    </ol>
+    <ul>
+      <li>
+level 3 item (ul)      </li>
+      <li>
+level 3 item (ul)      </li>
+    </ul>
+  </li>
+  <li>
+level 1 item (ul)  </li>
+</ul>
+<h3>
+And a task list</h3>
+<ul>
+  <li>
+[ ] Hello, this is a TODO item  </li>
+  <li>
+[ ] Hello, this is another TODO item  </li>
+  <li>
+[x] Goodbye, this item is done  </li>
+</ul>
+<h3>
+Nesting task lists</h3>
+<ul>
+  <li>
+[ ] level 1 item (task)    <ul>
+      <li>
+[ ] level 2 item (task)      </li>
+      <li>
+[ ] level 2 item (task)      </li>
+    </ul>
+  </li>
+  <li>
+[ ] level 1 item (task)  </li>
+  <li>
+[ ] level 1 item (task)  </li>
+</ul>
+<h3>
+Nesting a ul in a task list</h3>
+<ul>
+  <li>
+[ ] level 1 item (task)    <ul>
+      <li>
+level 2 item (ul)      </li>
+      <li>
+level 2 item (ul)      </li>
+    </ul>
+  </li>
+  <li>
+[ ] level 1 item (task)  </li>
+  <li>
+[ ] level 1 item (task)  </li>
+</ul>
+<h3>
+Nesting a task list in a ul</h3>
+<ul>
+  <li>
+level 1 item (ul)    <ul>
+      <li>
+[ ] level 2 item (task)      </li>
+      <li>
+[ ] level 2 item (task)      </li>
+    </ul>
+  </li>
+  <li>
+level 1 item (ul)  </li>
+  <li>
+level 1 item (ul)  </li>
+</ul>
+<h3>
+Small image</h3>
+<p>
+  <img src="../../assets/images/" alt="">
+</p>
+<p>
+“<a href="https://www.flickr.com/photos/97810305@N08/9401451269">Wroclaw University Library digitizing rare archival texts</a>“ by <a href="https://www.flickr.com/photos/97810305@N08">j_cadmus</a> is marked with <a href="https://creativecommons.org/licenses/by/2.0/?ref=openverse">CC BY 2.0</a>.</p>
+<h3>
+Labels</h3>
+<p class="label">
+I’m a label</p>
+<p class="label-blue label">
+blue</p>
+<p class="label-green label">
+green</p>
+<p class="label-purple label">
+purple</p>
+<p class="label-yellow label">
+yellow</p>
+<p class="label-red label">
+red</p>
+<p class="label">
+<strong>bold</strong></p>
+<p class="label">
+<em>italic</em></p>
+<p class="label">
+<strong><em>bold + italic</em></strong></p>
+<h3>
+Definition lists can be used with HTML syntax.</h3>
+<dl>
+  <dt>Name</dt>
+<dd>Godzilla</dd>
+<dt>Born</dt>
+<dd>1952</dd>
+<dt>Birthplace</dt>
+<dd>Japan</dd>
+<dt>Color</dt>
+<dd>Green</dd></dl>
+<h4>
+Multiple description terms and values</h4>
+<p>
+Term
+: Brief description of Term</p>
+<p>
+Longer Term
+: Longer description of Term,
+  possibly more than one line</p>
+<p>
+Term
+: First description of Term,
+  possibly more than one line</p>
+<p>
+: Second description of Term,
+  possibly more than one line</p>
+<p>
+Term1
+Term2
+: Single description of Term1 and Term2,
+  possibly more than one line</p>
+<p>
+Term1
+Term2
+: First description of Term1 and Term2,
+  possibly more than one line</p>
+<p>
+: Second description of Term1 and Term2,
+  possibly more than one line</p>
+
+
+        </div>
+
+        <footer class="footer footer-center p-10 bg-base-200 text-base-content rounded">
+          <aside>
+            <p>© 2024 Josh Chernoff </p>
+          </aside>
+        </footer>
+      </div>
+      <!-- Hidden drawer slider out section -->
+      <div class="drawer-side z-50" role="dialog" aria-modal="true">
+        <label for="mobile-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
+        <!-- Background backdrop, show/hide based on slide-over state. -->
+        <div class="h-screen z-50 w-full overflow-y-auto bg-gray-900 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-white/10">
+          <div class="flex items-center justify-between">
+            <a href="#" class="-m-1.5 p-1.5">
+              <span class="sr-only">Joshchernoff</span>
+              <img class="h-8 w-auto" src="/images" alt="">
+            </a>
+            <label class="-m-2.5 rounded-md p-2.5 text-gray-700" for="mobile-drawer" aria-label="close sidebar">
+              <span class="sr-only">Close menu</span>
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+            </label>
+          </div>
+          <div class="mt-6 flow-root">
+            <div class="-my-6 divide-y divide-gray-500/25">
+              <div class="space-y-2 py-6">
+                <div class="dropdown dropdown-hover block">
+                  <div tabindex="0" role="button" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800">
+                    About
+                  </div>
+                  <div tabindex="0" class="dropdown-content z-[1]">
+                    <ul class="menu mt-4 shadow bg-base-100 rounded-box w-52">
+                      <li><a>Summer Program</a></li>
+                      <li><a>PROJECTS Program</a></li>
+                      <li><a>Our History</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800">Contact</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
