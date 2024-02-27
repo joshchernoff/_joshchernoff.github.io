@@ -1,12 +1,14 @@
 %{
-  title: "Employment",
+  title: "About",
   author: "Josh Chernoff",
-  tags: ~w(april fools),
-  description: "Let's learn how to do pranks!",
-  wrapper_class: "mx-auto py-20 w-2/3"
+  tags: ~w(),
+  description: "",
+  wrapper_class: "prose lg:prose-lg mx-auto p-10 md:px-20 md:px-0"
 }
 ---
 
-## Testing mic testy
+![Alt text](/assets/images/skull.webp)
 
-Just the run of the mill test
+## This is just a dumping ground. 
+
+I'm just another meat popsicle who was on the ramblin rod show.

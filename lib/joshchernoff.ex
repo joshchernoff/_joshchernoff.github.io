@@ -5,7 +5,20 @@ defmodule Joshchernoff do
   def post(assigns) do
     ~H"""
     <.layout pages_nav={@pages_nav} wrapper_class={@wrapper_class} title={@post.title}>
+      <h1><%= @post.title %></h1>
+      <p>
+        <%=
+        Enum.map(@post.tags, fn tag -> "<div class='badge badge-outline'>#{tag}</div>" end)
+        |> Enum.join(" ")
+        |> raw()
+        %>
+        <span class="block">
+        Publish: <%= raw @post.date |> Calendar.strftime("%a, %B %d %Y") %>
+        </span>
+      </p>
+      <hr />
       <%= raw @post.body %>
+
     </.layout>
     """
   end
@@ -51,6 +64,9 @@ defmodule Joshchernoff do
                       <%= post.title %>
                     </a>
                   </h3>
+                  <p>
+                    Tagged as <%= Enum.join(post.tags, ", ") %>
+                  </p>
                   <div><span>Published:</span> <time datetime={ post.date }><%= post.date %></time></div>
                   <p class="mt-5 line-clamp-3 text-sm leading-6 "><%= post.description %></p>
                 </div>

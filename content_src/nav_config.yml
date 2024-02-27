@@ -7,5 +7,3 @@ items:
         url: /contact.html
       - label: About Me
         url: /about.html
-  - label: Source
-    url: https://github.com/joshchernoff/joshchernoff.github.io
