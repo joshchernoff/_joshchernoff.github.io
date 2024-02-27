@@ -64,47 +64,121 @@
             </ul>
           </div>
           <div class="navbar-end">
-            <div class="dropdown hidden md:block">
-              <div tabindex="0" role="button" class="btn m-1">
+            <details id="theme-change" class="dropdown details-reset details-overlay details-overlay-dark z-10 mr-4">
+              <summary class="btn btn-primary">
                 Theme
-                <svg width="12px" height="12px" class="h-2 w-2 fill-current opacity-60 inline-block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 2048">
-                  <path d="M1799 349l242 241-1017 1017L7 590l242-241 775 775 775-775z"></path>
-                </svg>
-              </div>
-              <ul tabindex="0" class="dropdown-content z-[1] p-2 shadow-2xl bg-base-300 rounded-box w-52">
-                <li><input type="radio" name="theme-dropdown" class="theme-controller btn btn-sm btn-block btn-ghost justify-start" aria-label="Light" value="light"></li>
-                <li><input type="radio" name="theme-dropdown" class="theme-controller btn btn-sm btn-block btn-ghost justify-start" aria-label="Dark" value="dark">
+              </summary>
+              <ul tabindex="0" class="dropdown-menu absolute right-0 w-56 p-2 mt-2 text-gray-800 dark:text-white animate-slide-in-down rounded-lg shadow-md">
+                <li>
+                  <a href="#" class="theme-change__option flex items-center gap-2 hover:bg-gray-200 py-2 px-3 block whitespace-nowrap" data-theme="light">
+                    🌞️ Light Mode
+                  </a>
                 </li>
-                <li><input type="radio" name="theme-dropdown" class="theme-controller btn btn-sm btn-block btn-ghost justify-start" aria-label="Cupcake" value="cupcake"></li>
-                <li><input type="radio" name="theme-dropdown" class="theme-controller btn btn-sm btn-block btn-ghost justify-start" aria-label="Bumblebee" value="bumblebee"></li>
-                <li><input type="radio" name="theme-dropdown" class="theme-controller btn btn-sm btn-block btn-ghost justify-start" aria-label="Emerald" value="emerald"></li>
-                <li><input type="radio" name="theme-dropdown" class="theme-controller btn btn-sm btn-block btn-ghost justify-start" aria-label="Corporate" value="corporate"></li>
-                <li><input type="radio" name="theme-dropdown" class="theme-controller btn btn-sm btn-block btn-ghost justify-start" aria-label="Synthwave" value="synthwave"></li>
-                <li><input type="radio" name="theme-dropdown" class="theme-controller btn btn-sm btn-block btn-ghost justify-start" aria-label="Retro" value="retro"></li>
-                <li><input type="radio" name="theme-dropdown" class="theme-controller btn btn-sm btn-block btn-ghost justify-start" aria-label="Cyberpunk" value="cyberpunk"></li>
-                <li><input type="radio" name="theme-dropdown" class="theme-controller btn btn-sm btn-block btn-ghost justify-start" aria-label="Valentine" value="valentine"></li>
-                <li><input type="radio" name="theme-dropdown" class="theme-controller btn btn-sm btn-block btn-ghost justify-start" aria-label="Halloween" value="halloween"></li>
-                <li><input type="radio" name="theme-dropdown" class="theme-controller btn btn-sm btn-block btn-ghost justify-start" aria-label="Garden" value="garden"></li>
-                <li><input type="radio" name="theme-dropdown" class="theme-controller btn btn-sm btn-block btn-ghost justify-start" aria-label="Forest" value="forest"></li>
-                <li><input type="radio" name="theme-dropdown" class="theme-controller btn btn-sm btn-block btn-ghost justify-start" aria-label="Aqua" value="aqua">
+                <li>
+                  <a href="#" class="theme-change__option flex items-center gap-2 hover:bg-gray-200 py-2 px-3 block whitespace-nowrap" data-theme="dark">
+                   🔥 Dark Mode
+                  </a>
                 </li>
-                <li><input type="radio" name="theme-dropdown" class="theme-controller btn btn-sm btn-block btn-ghost justify-start" aria-label="LoFi" value="lofi">
+                <li>
+                  <a href="#" class="theme-change__option flex items-center gap-2 hover:bg-gray-200 py-2 px-3 block whitespace-nowrap" data-theme="cupcake">
+                    🍰 Cupcake
+                  </a>
                 </li>
-                <li><input type="radio" name="theme-dropdown" class="theme-controller btn btn-sm btn-block btn-ghost justify-start" aria-label="Pastel" value="pastel"></li>
-                <li><input type="radio" name="theme-dropdown" class="theme-controller btn btn-sm btn-block btn-ghost justify-start" aria-label="Fantasy" value="fantasy"></li>
-                <li><input type="radio" name="theme-dropdown" class="theme-controller btn btn-sm btn-block btn-ghost justify-start" aria-label="WireFrame" value="wireframe"></li>
-                <li><input type="radio" name="theme-dropdown" class="theme-controller btn btn-sm btn-block btn-ghost justify-start" aria-label="Black" value="black"></li>
-                <li><input type="radio" name="theme-dropdown" class="theme-controller btn btn-sm btn-block btn-ghost justify-start" aria-label="Luxury" value="luxury"></li>
-                <li><input type="radio" name="theme-dropdown" class="theme-controller btn btn-sm btn-block btn-ghost justify-start" aria-label="Dracula" value="dracula"></li>
-                <li><input type="radio" name="theme-dropdown" class="theme-controller btn btn-sm btn-block btn-ghost justify-start" aria-label="CMYK" value="cmyk">
+                <li>
+                  <a href="#" class="theme-change__option flex items-center gap-2 hover:bg-gray-200 py-2 px-3 block whitespace-nowrap" data-theme="bumblebee">
+                   🐝 Bumblebee
+                  </a>
                 </li>
-                <li><input type="radio" name="theme-dropdown" class="theme-controller btn btn-sm btn-block btn-ghost justify-start" aria-label="Autumn" value="autumn"></li>
-                <li><input type="radio" name="theme-dropdown" class="theme-controller btn btn-sm btn-block btn-ghost justify-start" aria-label="Business" value="business"></li>
-                <li><input type="radio" name="theme-dropdown" class="theme-controller btn btn-sm btn-block btn-ghost justify-start" aria-label="aqua" value="light">
+                <li>
+                  <a href="#" class="theme-change__option flex items-center gap-2 hover:bg-gray-200 py-2 px-3 block whitespace-nowrap" data-theme="emerald">
+                    ✨ Emerald
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="theme-change__option flex items-center gap-2 hover:bg-gray-200 py-2 px-3 block whitespace-nowrap" data-theme="corporate">
+                    🏢 Corporate
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="theme-change__option flex items-center gap-2 hover:bg-gray-200 py-2 px-3 block whitespace-nowrap" data-theme="synthwave">
+                    🎸 Synthwave
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="theme-change__option flex items-center gap-2 hover:bg-gray-200 py-2 px-3 block whitespace-nowrap" data-theme="retro">
+                    👴 Retro
+
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="theme-change__option flex items-center gap-2 hover:bg-gray-200 py-2 px-3 block whitespace-nowrap" data-theme="cyberpunk">
+                   🤖 Cyberpunk
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="theme-change__option flex items-center gap-2 hover:bg-gray-200 py-2 px-3 block whitespace-nowrap" data-theme="valentine">
+                    💕 Valentine
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="theme-change__option flex items-center gap-2 hover:bg-gray-200 py-2 px-3 block whitespace-nowrap" data-theme="halloween">
+                    🎃 Halloween
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="theme-change__option flex items-center gap-2 hover:bg-gray-200 py-2 px-3 block whitespace-nowrap" data-theme="garden">
+                    🌻 Garden
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="theme-change__option flex items-center gap-2 hover:bg-gray-200 py-2 px-3 block whitespace-nowrap" data-theme="forest">
+                    🌲 Forest
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="theme-change__option flex items-center gap-2 hover:bg-gray-200 py-2 px-3 block whitespace-nowrap" data-theme="aqua">
+                    🐳 Aqua
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="theme-change__option flex items-center gap-2 hover:bg-gray-200 py-2 px-3 block whitespace-nowrap" data-theme="lofi">
+                    📺 LoFi
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="theme-change__option flex items-center gap-2 hover:bg-gray-200 py-2 px-3 block whitespace-nowrap" data-theme="pastel">
+                    🧁 Pastel
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="theme-change__option flex items-center gap-2 hover:bg-gray-200 py-2 px-3 block whitespace-nowrap" data-theme="fantasy">
+                    🧚‍♀️ Fantasy
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="theme-change__option flex items-center gap-2 hover:bg-gray-200 py-2 px-3 block whitespace-nowrap" data-theme="wireframe">
+                    📈 Wireframe
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="theme-change__option flex items-center gap-2 hover:bg-gray-200 py-2 px-3 block whitespace-nowrap" data-theme="black">
+                    🏠 Black
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="theme-change__option flex items-center gap-2 hover:bg-gray-200 py-2 px-3 block whitespace-nowrap" data-theme="luxury">
+                    💼 Luxury
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="theme-change__option flex items-center gap-2 hover:bg-gray-200 py-2 px-3 block whitespace-nowrap" data-theme="dracula">
+                    🧛‍♂️ Dracula
+                  </a>
                 </li>
               </ul>
-            </div>
-            <label class="flex cursor-pointer gap-2 mr-8">
+            </details>
+            
+            <label class="flex cursor-pointer gap-2 ml-4 mr-8">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <circle cx="12" cy="12" r="5"></circle>
                 <path d="M12 1v2M12 21v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1 12h2M21 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"></path>
