@@ -63,3 +63,4 @@ jobs:
       with:
         personal_token: ${{ secrets.PAT }}
         publish_dir: output
+        cname: greed.observer

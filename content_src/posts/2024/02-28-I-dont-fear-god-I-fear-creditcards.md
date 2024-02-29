@@ -1,7 +1,7 @@
 %{
   title: "I Don't Fear God, I Fear Credit Cards",
   author: "Josh Chernoff",
-  tags: ~w(pain suffering human-condition),
+  tags: ~w(society politics),
   description: "I no longer believe in your ability to improve this world.",
   wrapper_class: "prose lg:prose-lg mx-auto p-10 md:px-20 md:px-0"
 }
@@ -63,22 +63,22 @@ I guess they probably will as soon as these Muslims stop beating their wives for
 
 ## You live ignorant but expect to die wise
 
-When you tamper with the inner fabric
-Of people's lives
-Expect there to be unsettled scores
-To equalize
-You build a city on feeble lies
-Then cry when the ground opens up wide
-And swallows your highrise
-You live ignorant but expect to die wise
-We comin' to in your last breath of air
-And nobody knows where you're going from here
-But you can't handle change
-So it's something you fear
-Release everything that you held dear
-Like your car, jewelry, your cash and your career
-Don't forget all of that time you couldn't spare
-To sit down and lend your three children an ear
+When you tamper with the inner fabric  
+Of people's lives  
+Expect there to be unsettled scores  
+To equalize  
+You build a city on feeble lies  
+Then cry when the ground opens up wide  
+And swallows your highrise  
+You live ignorant but expect to die wise  
+becoming sencier in your last breath of air  
+And nobody knows where you're going from here  
+But you can't handle change  
+So it's something you fear  
+Release everything that you held dear  
+Like your car, jewelry, your cash and your career  
+Don't forget all of that time you couldn't spare  
+To sit down and lend your three children an ear  
 
 -- Huevos with Jeff and Rani by Prefuse 73
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xT7WshL3X2c?si=7MnTfouvWyc6mSO8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

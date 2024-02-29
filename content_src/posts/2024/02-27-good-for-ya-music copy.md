@@ -1,7 +1,7 @@
 %{
   title: "Good for ya music 2/27",
   author: "Josh Chernoff",
-  tags: ~w(music house techno),
+  tags: ~w(music),
   description: "Week #1 of tracks I'm listening to currently",
   wrapper_class: "prose lg:prose-lg mx-auto p-10 md:px-20 md:px-0"
 }

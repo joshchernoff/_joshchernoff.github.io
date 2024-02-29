@@ -1,6 +1,7 @@
 module.exports = {
   content: [
     "./**/*.js",
+    "../lib/html/*",
     "../lib/joshchernoff.ex",
     "../content_src/**/*.md"
   ],

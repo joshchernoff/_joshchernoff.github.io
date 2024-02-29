@@ -1,9 +1,7 @@
 items:
   - label: Blog
     url: /blog.html
-  - label: About
-    children:
-      - label: Contact
-        url: /contact.html
-      - label: About Me
-        url: /about.html
+  - label: Photography
+    url: /photography.html
+  - label: Listing to
+    url: https://soundcloud.com/polygonpusher
