@@ -1,5 +1,5 @@
 <!doctype html>
-<html data-theme="light">
+<html>
   <head>
 
   <meta charset="utf-8">
@@ -10,6 +10,16 @@
     <link rel="stylesheet" href="/assets/app.css">
     <script type="text/javascript" src="/assets/app.js"></script>
   </head>
+
+  <script is:inline>
+      // ☝️ This script prevent the FART effect.
+      if (localStorage.getItem("theme") === null) {
+        document.documentElement.setAttribute("data-theme", "light");
+      } else
+      document.documentElement.setAttribute("data-theme", localStorage.getItem("theme"));
+      // "theme" LocalStorage value is set by the package to remember user preference.
+      // The value is checked and applyed before rendering anything.
+  </script>
 
   <body>
     <div class="drawer">
@@ -59,7 +69,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="#" class="theme-change__option flex items-center gap-2 hover:bg-gray-200 py-2 px-3 block whitespace-nowrap" data-theme="dark">
+                  <a href="#" class="theme-change__option flex items-center gap-2 hover:bg-gray-200 py-2 px-3 block whitespace-nowrap" data-theme="dark" data-key="front-page">
                    🔥 Dark Mode
                   </a>
                 </li>
