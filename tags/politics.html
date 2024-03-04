@@ -16,170 +16,164 @@
         document.documentElement.setAttribute("data-theme", "light");
       } else
       document.documentElement.setAttribute("data-theme", localStorage.getItem("theme"));
-      // "theme" LocalStorage value is set by the package to remember user preference.
-      // The value is checked and applyed before rendering anything.
   </script>
 
   <body>
-    <div class="drawer">
-      <input id="mobile-drawer" type="checkbox" class="drawer-toggle">
-      <div class="drawer-content">
-        <!-- Main Nav -->
-        <div class="navbar bg-base-100 z-100">
-          <div class="navbar-start">
-            <div class="dropdown">
-              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16"></path>
-                </svg>
-              </div>
-              <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-               
-                  <li><a href='/blog.html'>Blog</a></li>
-               
-                  <li><a href='/photography.html'>Photography</a></li>
-               
-              </ul>
-            </div>
-            <a href="/" class="-m-1.5 p-1.5">
-              <span class="sr-only">Josh Chernoff</span>
-              <img class="w-20 rounded-full mr-2 inline" src="/assets/images/avatar.jpeg" alt=""><span>Чернов</span>
-            </a>
+    <!-- Main Nav -->
+    <div class="navbar bg-base-100 z-100">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16"></path>
+            </svg>
           </div>
+          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
 
-          <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal px-1 z-10">
-              
-                <li><a href='/blog.html'>Blog</a></li>
-              
-                <li><a href='/photography.html'>Photography</a></li>
-              
-            </ul>
-          </div>
-          <div class="navbar-end">
-            <details id="theme-change" class="dropdown details-reset details-overlay details-overlay-dark z-10 mr-4">
-              <summary class="btn btn-primary">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 0 0-5.78 1.128 2.25 2.25 0 0 1-2.4 2.245 4.5 4.5 0 0 0 8.4-2.245c0-.399-.078-.78-.22-1.128Zm0 0a15.998 15.998 0 0 0 3.388-1.62m-5.043-.025a15.994 15.994 0 0 1 1.622-3.395m3.42 3.42a15.995 15.995 0 0 0 4.764-4.648l3.876-5.814a1.151 1.151 0 0 0-1.597-1.597L14.146 6.32a15.996 15.996 0 0 0-4.649 4.763m3.42 3.42a6.776 6.776 0 0 0-3.42-3.42"></path>
-              </svg>
-                Theme
-              </summary>
-              <ul tabindex="0" class="dropdown-menu absolute right-0 w-56 p-2 mt-2 text-gray-800 dark:text-white animate-slide-in-down rounded-lg shadow-md">
-                <li>
-                  <a href="#" class="theme-change__option flex items-center gap-2 hover:bg-gray-200 py-2 px-3 block whitespace-nowrap" data-theme="light">
-                    🌞️ Light Mode
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="theme-change__option flex items-center gap-2 hover:bg-gray-200 py-2 px-3 block whitespace-nowrap" data-theme="dark" data-key="front-page">
-                   🔥 Dark Mode
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="theme-change__option flex items-center gap-2 hover:bg-gray-200 py-2 px-3 block whitespace-nowrap" data-theme="cupcake">
-                    🍰 Cupcake
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="theme-change__option flex items-center gap-2 hover:bg-gray-200 py-2 px-3 block whitespace-nowrap" data-theme="bumblebee">
-                   🐝 Bumblebee
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="theme-change__option flex items-center gap-2 hover:bg-gray-200 py-2 px-3 block whitespace-nowrap" data-theme="emerald">
-                    ✨ Emerald
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="theme-change__option flex items-center gap-2 hover:bg-gray-200 py-2 px-3 block whitespace-nowrap" data-theme="corporate">
-                    🏢 Corporate
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="theme-change__option flex items-center gap-2 hover:bg-gray-200 py-2 px-3 block whitespace-nowrap" data-theme="synthwave">
-                    🎸 Synthwave
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="theme-change__option flex items-center gap-2 hover:bg-gray-200 py-2 px-3 block whitespace-nowrap" data-theme="retro">
-                    👴 Retro
+<li><a href='/blog.html'>Blog</a></li>
 
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="theme-change__option flex items-center gap-2 hover:bg-gray-200 py-2 px-3 block whitespace-nowrap" data-theme="cyberpunk">
-                   🤖 Cyberpunk
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="theme-change__option flex items-center gap-2 hover:bg-gray-200 py-2 px-3 block whitespace-nowrap" data-theme="valentine">
-                    💕 Valentine
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="theme-change__option flex items-center gap-2 hover:bg-gray-200 py-2 px-3 block whitespace-nowrap" data-theme="halloween">
-                    🎃 Halloween
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="theme-change__option flex items-center gap-2 hover:bg-gray-200 py-2 px-3 block whitespace-nowrap" data-theme="garden">
-                    🌻 Garden
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="theme-change__option flex items-center gap-2 hover:bg-gray-200 py-2 px-3 block whitespace-nowrap" data-theme="forest">
-                    🌲 Forest
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="theme-change__option flex items-center gap-2 hover:bg-gray-200 py-2 px-3 block whitespace-nowrap" data-theme="aqua">
-                    🐳 Aqua
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="theme-change__option flex items-center gap-2 hover:bg-gray-200 py-2 px-3 block whitespace-nowrap" data-theme="lofi">
-                    📺 LoFi
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="theme-change__option flex items-center gap-2 hover:bg-gray-200 py-2 px-3 block whitespace-nowrap" data-theme="pastel">
-                    🧁 Pastel
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="theme-change__option flex items-center gap-2 hover:bg-gray-200 py-2 px-3 block whitespace-nowrap" data-theme="fantasy">
-                    🧚‍♀️ Fantasy
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="theme-change__option flex items-center gap-2 hover:bg-gray-200 py-2 px-3 block whitespace-nowrap" data-theme="wireframe">
-                    📈 Wireframe
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="theme-change__option flex items-center gap-2 hover:bg-gray-200 py-2 px-3 block whitespace-nowrap" data-theme="black">
-                    🏠 Black
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="theme-change__option flex items-center gap-2 hover:bg-gray-200 py-2 px-3 block whitespace-nowrap" data-theme="luxury">
-                    💼 Luxury
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="theme-change__option flex items-center gap-2 hover:bg-gray-200 py-2 px-3 block whitespace-nowrap" data-theme="dracula">
-                    🧛‍♂️ Dracula
-                  </a>
-                </li>
-              </ul>
-            </details>
-            
+<li><a href='/photography.html'>Photography</a></li>
 
-          </div>
+          </ul>
         </div>
+        <a href="/" class="-m-1.5 p-1.5">
+          <span class="sr-only">Josh Chernoff</span>
+          <img class="w-20 rounded-full mr-2 inline" src="/assets/images/avatar.jpeg" alt=""><span>Чернов</span>
+        </a>
+      </div>
 
-        <div class="">
-          
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1 z-10">
+
+<li><a href='/blog.html'>Blog</a></li>
+
+<li><a href='/photography.html'>Photography</a></li>
+
+        </ul>
+      </div>
+
+      <div class="navbar-end">
+        <details id="theme-change" class="dropdown details-reset details-overlay details-overlay-dark z-10 mr-4">
+          <summary class="btn btn-primary">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 0 0-5.78 1.128 2.25 2.25 0 0 1-2.4 2.245 4.5 4.5 0 0 0 8.4-2.245c0-.399-.078-.78-.22-1.128Zm0 0a15.998 15.998 0 0 0 3.388-1.62m-5.043-.025a15.994 15.994 0 0 1 1.622-3.395m3.42 3.42a15.995 15.995 0 0 0 4.764-4.648l3.876-5.814a1.151 1.151 0 0 0-1.597-1.597L14.146 6.32a15.996 15.996 0 0 0-4.649 4.763m3.42 3.42a6.776 6.776 0 0 0-3.42-3.42"></path>
+          </svg>
+            Theme
+          </summary>
+          <ul tabindex="0" class="dropdown-menu absolute right-0 w-56 p-2 mt-2 text-gray-800 dark:text-white animate-slide-in-down rounded-lg shadow-md">
+            <li>
+              <a href="#" class="theme-change__option flex items-center gap-2 hover:bg-gray-200 py-2 px-3  whitespace-nowrap" data-theme="light">
+                🌞️ Light Mode
+              </a>
+            </li>
+            <li>
+              <a href="#" class="theme-change__option flex items-center gap-2 hover:bg-gray-200 py-2 px-3  whitespace-nowrap" data-theme="dark" data-key="front-page">
+                🔥 Dark Mode
+              </a>
+            </li>
+            <li>
+              <a href="#" class="theme-change__option flex items-center gap-2 hover:bg-gray-200 py-2 px-3  whitespace-nowrap" data-theme="cupcake">
+                🍰 Cupcake
+              </a>
+            </li>
+            <li>
+              <a href="#" class="theme-change__option flex items-center gap-2 hover:bg-gray-200 py-2 px-3  whitespace-nowrap" data-theme="bumblebee">
+                🐝 Bumblebee
+              </a>
+            </li>
+            <li>
+              <a href="#" class="theme-change__option flex items-center gap-2 hover:bg-gray-200 py-2 px-3  whitespace-nowrap" data-theme="emerald">
+                ✨ Emerald
+              </a>
+            </li>
+            <li>
+              <a href="#" class="theme-change__option flex items-center gap-2 hover:bg-gray-200 py-2 px-3  whitespace-nowrap" data-theme="corporate">
+                🏢 Corporate
+              </a>
+            </li>
+            <li>
+              <a href="#" class="theme-change__option flex items-center gap-2 hover:bg-gray-200 py-2 px-3  whitespace-nowrap" data-theme="synthwave">
+                🎸 Synthwave
+              </a>
+            </li>
+            <li>
+              <a href="#" class="theme-change__option flex items-center gap-2 hover:bg-gray-200 py-2 px-3  whitespace-nowrap" data-theme="retro">
+                👴 Retro
+
+              </a>
+            </li>
+            <li>
+              <a href="#" class="theme-change__option flex items-center gap-2 hover:bg-gray-200 py-2 px-3  whitespace-nowrap" data-theme="cyberpunk">
+                🤖 Cyberpunk
+              </a>
+            </li>
+            <li>
+              <a href="#" class="theme-change__option flex items-center gap-2 hover:bg-gray-200 py-2 px-3  whitespace-nowrap" data-theme="valentine">
+                💕 Valentine
+              </a>
+            </li>
+            <li>
+              <a href="#" class="theme-change__option flex items-center gap-2 hover:bg-gray-200 py-2 px-3  whitespace-nowrap" data-theme="halloween">
+                🎃 Halloween
+              </a>
+            </li>
+            <li>
+              <a href="#" class="theme-change__option flex items-center gap-2 hover:bg-gray-200 py-2 px-3  whitespace-nowrap" data-theme="garden">
+                🌻 Garden
+              </a>
+            </li>
+            <li>
+              <a href="#" class="theme-change__option flex items-center gap-2 hover:bg-gray-200 py-2 px-3  whitespace-nowrap" data-theme="forest">
+                🌲 Forest
+              </a>
+            </li>
+            <li>
+              <a href="#" class="theme-change__option flex items-center gap-2 hover:bg-gray-200 py-2 px-3  whitespace-nowrap" data-theme="aqua">
+                🐳 Aqua
+              </a>
+            </li>
+            <li>
+              <a href="#" class="theme-change__option flex items-center gap-2 hover:bg-gray-200 py-2 px-3  whitespace-nowrap" data-theme="lofi">
+                📺 LoFi
+              </a>
+            </li>
+            <li>
+              <a href="#" class="theme-change__option flex items-center gap-2 hover:bg-gray-200 py-2 px-3  whitespace-nowrap" data-theme="pastel">
+                🧁 Pastel
+              </a>
+            </li>
+            <li>
+              <a href="#" class="theme-change__option flex items-center gap-2 hover:bg-gray-200 py-2 px-3  whitespace-nowrap" data-theme="fantasy">
+                🧚‍♀️ Fantasy
+              </a>
+            </li>
+            <li>
+              <a href="#" class="theme-change__option flex items-center gap-2 hover:bg-gray-200 py-2 px-3  whitespace-nowrap" data-theme="wireframe">
+                📈 Wireframe
+              </a>
+            </li>
+            <li>
+              <a href="#" class="theme-change__option flex items-center gap-2 hover:bg-gray-200 py-2 px-3  whitespace-nowrap" data-theme="black">
+                🏠 Black
+              </a>
+            </li>
+            <li>
+              <a href="#" class="theme-change__option flex items-center gap-2 hover:bg-gray-200 py-2 px-3  whitespace-nowrap" data-theme="luxury">
+                💼 Luxury
+              </a>
+            </li>
+            <li>
+              <a href="#" class="theme-change__option flex items-center gap-2 hover:bg-gray-200 py-2 px-3  whitespace-nowrap" data-theme="dracula">
+                🧛‍♂️ Dracula
+              </a>
+            </li>
+          </ul>
+        </details>
+      </div>
+    </div>
+
+    <div class="">
+
 
   <!-- Blog section -->
   <div class="py-24 sm:py-42 mb-52">
@@ -200,7 +194,6 @@
   <a class="m-2 btn btn-sm " href="/tags/therapy.html">Therapy<div class="badge">1</div></a>
 
 </div>
-
       <div class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
         
           <article class="flex flex-col items-start">
@@ -265,71 +258,12 @@
   <!-- temp button for drawer -->
   
 
-        </div>
-
-        <footer class="footer footer-center p-10 bg-base-200 text-base-content rounded">
-          <aside>
-            <p>© 2024 Josh Chernoff </p>
-          </aside>
-        </footer>
-      </div>
-      <!-- Hidden drawer slider out section -->
-      <div class="drawer-side z-50" role="dialog" aria-modal="true">
-        <label for="mobile-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
-        <!-- Background backdrop, show/hide based on slide-over state. -->
-        <div class="h-screen z-50 w-full overflow-y-auto bg-gray-900 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-white/10">
-          <div class="flex items-center justify-between">
-            <a href="#" class="-m-1.5 p-1.5">
-              <span class="sr-only">Joshchernoff</span>
-            </a>
-            <label class="-m-2.5 rounded-md p-2.5 text-gray-700" for="mobile-drawer" aria-label="close sidebar">
-              <span class="sr-only">Close menu</span>
-              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
-              </svg>
-            </label>
-          </div>
-          <div class="mt-6 flow-root">
-            <div class="-my-6 divide-y divide-gray-500/25">
-              <div class="space-y-2 py-6">
-                <div class="dropdown dropdown-hover block">
-                  <div tabindex="0" role="button" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800">
-                    About
-                  </div>
-                  <div tabindex="0" class="dropdown-content z-[1]">
-                    <ul class="menu mt-4 shadow bg-base-100 rounded-box w-52">
-                      <li><a>Summer Program</a></li>
-                      <li><a>PROJECTS Program</a></li>
-                      <li><a>Our History</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800">Contact</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
-    <script type="javascript">
-      document.addEventListener("DOMContentLoaded", function() {
-        let lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
 
-        let imageObserver = new IntersectionObserver(function(entries, observer) {
-          entries.forEach(function(entry) {
-            if (entry.isIntersecting) {
-              let image = entry.target;
-              image.src = image.dataset.src;
-              image.classList.remove("lazy");
-              imageObserver.unobserve(image);
-            }
-          });
-        });
-
-        lazyImages.forEach(function(image) {
-          imageObserver.observe(image);
-        });
-      });
-      </script>
+    <footer class="footer footer-center p-10 bg-base-200 text-base-content">
+      <aside>
+        <p>© 2024 Josh Chernoff </p>
+      </aside>
+    </footer>
   </body>
 </html>
