@@ -8,7 +8,7 @@ defmodule Joshchernoff.Blog do
     highlighters: [:makeup_elixir, :makeup_erlang]
 
   @posts Enum.sort_by(@posts, & &1.date, {:desc, Date})
-  @tags @posts |> Enum.map(&(&1.tags)) |> List.flatten() |> Enum.frequencies() |> Enum.sort()
+  @tags @posts |> Enum.map(& &1.tags) |> List.flatten() |> Enum.frequencies() |> Enum.sort()
 
   @spec all_posts() :: [
           %Joshchernoff.Post{

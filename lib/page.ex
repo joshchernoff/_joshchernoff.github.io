@@ -5,7 +5,7 @@ defmodule Joshchernoff.Page do
   def build(filename, attrs, body) do
     path = Path.rootname(filename)
 
-    ["content_src" | ["pages" | split_path] ] = path |> Path.split()
+    ["content_src" | ["pages" | split_path]] = path |> Path.split()
     id = split_path |> List.last()
 
     path = Enum.join(split_path, "/") <> ".html"
