@@ -34,4 +34,5 @@ joshchernoff-*.tar
 /output/**
 !/output/assets/
 !/output/assets/images**
-
+!/output/rusty_image_color_sampler_bg.wasm
+!/output/rusty_image_color_sampler.js
