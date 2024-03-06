@@ -191,7 +191,7 @@ defmodule Joshchernoff do
             posts: Joshchernoff.Blog.filter_posts_by_tag(tag),
             pages_nav: pages_nav,
             wrapper_class:
-              Map.get(tag, :wrapper_class, "prose lg:prose-lg mx-auto p-10 md:px-20 md:px-0"),
+              Map.get(tag, :wrapper_class, nil),
             tag: tag,
             tags: tags
           })
@@ -212,7 +212,7 @@ defmodule Joshchernoff do
           post: post,
           pages_nav: pages_nav,
           wrapper_class:
-            Map.get(post, :wrapper_class, "prose lg:prose-lg mx-auto p-10 md:px-20 md:px-0")
+            Map.get(post, :wrapper_class, nil) || "prose lg:prose-lg mx-auto p-10 md:px-20 md:px-0"
         })
       )
     end
@@ -230,7 +230,7 @@ defmodule Joshchernoff do
           page: page,
           pages_nav: pages_nav,
           wrapper_class:
-            Map.get(page, :wrapper_class, "prose lg:prose-lg mx-auto p-10 md:px-20 md:px-0")
+            Map.get(page, :wrapper_class, nil) || "prose lg:prose-lg mx-auto p-10 md:px-20 md:px-0"
         })
       )
     end
