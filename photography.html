@@ -186,32 +186,6 @@ I do still love it. </p>
 <p>
 photography by Josh Chernoff</p>
 <hr class="thin">
-<script>
-  // Get the modal
-var modal = document.getElementById("myModal");
-
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById("myImg");
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-img.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
-}
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() { 
-  modal.style.display = "none";
-}</script>
-<!-- The Modal -->
-<div id="myModal" class="modal">
-    <span class="close">&times;</span>
-  <img class="modal-content" id="img01">
-  <div id="caption"></div></div>
 <p>
   <img alt="photo by Josh Chernoff" class="lazy" loading="lazy" src="/assets/images/photos/00483F51-F986-47AE-8C79-1B338F919412.webp">
 
@@ -892,6 +866,95 @@ loading=”lazy”}
 
   <img alt="photo by Josh Chernoff" class="lazy" loading="lazy" src="/assets/images/photos/B6D54DD0-FB74-4608-B5A0-5BC2AA6E8F21.webp">
 </p>
+<script type="module">
+    import init, { process_image } from './rusty_image_color_sampler.js';
+
+  // Initialize the WebAssembly module
+  init().then(() => {
+    // Function to process an image
+    async function processLazyImage(img) {
+      // Check if the image has already loaded
+      if (img.complete && img.naturalHeight !== 0) {
+        processImage(img);
+      } else {
+        // Set onload if the image is not yet loaded
+        img.onload = () => {
+          processImage(img);
+        };
+      }
+    }
+
+    // Function to fetch and process image data
+    async function processImage(img) {
+      try {
+        const response = await fetch(img.src);
+        const blob = await response.blob();
+        const arrayBuffer = await blob.arrayBuffer();
+        const results = process_image(new Uint8Array(arrayBuffer));
+        // Assuming results are now available and processed correctly
+        // The results need to be processed into color values if they are not already
+
+        // Create a container for the color swatches
+        const swatchContainer = document.createElement('div');
+        swatchContainer.classList.add('flex', 'mt-2', 'gap-2'); // Use TailwindCSS for layout
+
+        // Iterate over the color results and create individual swatch elements
+        // results.forEach(color => {
+        //   const swatch = document.createElement('div');
+        //   swatch.classList.add('w-6', 'h-6', 'rounded-full'); // Use TailwindCSS for size and shape
+        //   // Set the background color directly via the style attribute
+        //   console.log("Applying color:", color);
+
+        //   swatch.style.backgroundColor = color;
+        //   swatchContainer.appendChild(swatch);
+        // });
+
+        results.forEach(result => {
+          const swatch = document.createElement('div');
+          swatch.classList.add('w-6', 'h-6', 'rounded-full');
+          
+          // Extract the hexadecimal color value from the result string
+          const colorMatch = result.match(/#[0-9A-Fa-f]{6}/);
+          if (colorMatch && colorMatch[0]) {
+              const color = colorMatch[0];
+              
+              // Log the extracted color value to verify it's correct
+              console.log("Applying color:", color);
+              
+              // Apply the background color using the extracted hex value
+              swatch.style.backgroundColor = color;
+          } else {
+              // Log an error or handle cases where the hex color code isn't found
+              console.error("No valid color found in:", result);
+          }
+          
+          // Append to swatch container
+          swatchContainer.appendChild(swatch);
+      });
+
+        // Insert the swatch container into the DOM, next to the image
+        img.parentNode.insertBefore(swatchContainer, img.nextSibling);
+        
+      } catch (error) {
+        console.error('Error processing image:', error);
+      }
+    }
+
+    // Set up an Intersection Observer to watch images that are lazy-loaded
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          processLazyImage(entry.target);
+          observer.unobserve(entry.target); // Stop observing the image
+        }
+      });
+    }, { rootMargin: "0px", threshold: 0.1 });
+
+    // Observe all images with loading="lazy"
+    document.querySelectorAll('img[loading="lazy"]').forEach(img => {
+      observer.observe(img);
+    });
+  });</script>
 
 
     </div>
