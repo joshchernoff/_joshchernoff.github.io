@@ -190,8 +190,7 @@ defmodule Joshchernoff do
           tag(%{
             posts: Joshchernoff.Blog.filter_posts_by_tag(tag),
             pages_nav: pages_nav,
-            wrapper_class:
-              Map.get(tag, :wrapper_class, nil),
+            wrapper_class: nil,
             tag: tag,
             tags: tags
           })
