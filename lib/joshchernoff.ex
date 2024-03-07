@@ -6,7 +6,7 @@ defmodule Joshchernoff do
 
   def post(assigns) do
     ~H"""
-    <.layout pages_nav={@pages_nav} wrapper_class={@wrapper_class} title={@post.title}>
+    <.layout pages_nav={@pages_nav} wrapper_class={@wrapper_class} title={@post.title} description={@post.description}>
       <h1><%= @post.title %></h1>
       <p>
         <.render_tags tags={@post.tags} />
@@ -20,7 +20,7 @@ defmodule Joshchernoff do
 
   def page(assigns) do
     ~H"""
-    <.layout pages_nav={@pages_nav} wrapper_class={@wrapper_class} title={@page.title}>
+    <.layout pages_nav={@pages_nav} wrapper_class={@wrapper_class} title={@page.title} description={@page.description}>
       <%= raw @page.body %>
     </.layout>
     """
@@ -29,7 +29,7 @@ defmodule Joshchernoff do
   @spec index(any()) :: Phoenix.LiveView.Rendered.t()
   def index(assigns) do
     ~H"""
-    <.layout pages_nav={@pages_nav} wrapper_class={@wrapper_class} title="Home Page">
+    <.layout pages_nav={@pages_nav} wrapper_class={@wrapper_class} title="Home Page" description="A cultural wasteland for my narcissism" >
       <!-- Hero content -->
       <div class="relative isolate overflow-hidden h-screen">
         <img src="/assets/images/hero.jpg" alt=""
@@ -68,7 +68,7 @@ defmodule Joshchernoff do
 
   def blog(assigns) do
     ~H"""
-    <.layout pages_nav={@pages_nav} wrapper_class={@wrapper_class} title="Blog">
+    <.layout pages_nav={@pages_nav} wrapper_class={@wrapper_class} title="Blog" description="The latest rants of a idiot">
 
       <!-- Blog section -->
       <div class="py-24 sm:py-42 mb-52">
@@ -97,7 +97,7 @@ defmodule Joshchernoff do
 
   def tag(assigns) do
     ~H"""
-    <.layout pages_nav={@pages_nav} wrapper_class={@wrapper_class} title={"#{@tag |> String.capitalize()} Tag"}>
+    <.layout pages_nav={@pages_nav} wrapper_class={@wrapper_class} title={"#{@tag |> String.capitalize()} Tag"} description={"Posts taged as #{@tag |> String.capitalize()}"}>
 
       <!-- Blog section -->
       <div class="py-24 sm:py-42 mb-52">
@@ -122,7 +122,7 @@ defmodule Joshchernoff do
 
   def tags(assigns) do
     ~H"""
-    <.layout pages_nav={@pages_nav} wrapper_class={""} title="Tags">
+    <.layout pages_nav={@pages_nav} wrapper_class={""} title="Tags" description="Tags">
 
       <!-- Blog section -->
       <div class="py-24 sm:py-42 mb-52">

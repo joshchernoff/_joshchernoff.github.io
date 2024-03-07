@@ -2,7 +2,7 @@
   title: "Photography by Josh Chernoff",
   author: "Josh Chernoff",
   tags: ~w(Photogarphy streetphotography),
-  description: "In a past life I want to stop programming and go all in into street photography.",
+  description: "In a past life I wanted to stop programming and go all in into street photography.",
   wrapper_class: "prose lg:prose-lg mx-auto p-10 md:px-20 md:px-0"
 }
 
