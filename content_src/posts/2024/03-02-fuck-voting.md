@@ -7,7 +7,7 @@
 }
 ---
 
-I live in Oregon, I voted yes for messsue 110. It was the bill that decrimnilzed small ammounts of drugs and was meant to create more rehabs and treatment centers. Without even trying to address the issue my state is no undoing my vote. 
+I live in Oregon, I voted yes for messsue 110. It was the bill that decrimnilzed small ammounts of drugs and was meant to create more rehabs and treatment centers. Without even trying to address the issue my state is now undoing my vote. 
 
 https://olis.oregonlegislature.gov/liz/2024R1/Measures/Overview/HB4002
 
