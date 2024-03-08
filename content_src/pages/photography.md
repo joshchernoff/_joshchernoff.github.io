@@ -16,7 +16,7 @@ photography by Josh Chernoff
 
 ---
 
-[![photo by Josh Chernoff](/assets/images/photos/scaled/00483F51-F986-47AE-8C79-1B338F919412.webp){: .not-prose .mb-0 .lazy loading="lazy"}](/assets/images/photos/00483F51-F986-47AE-8C79-1B338F919412.webp)
+[![photo by Josh Chernoff](/assets/images/photos/scaled/00483F51-F986-47AE-8C79-1B338F919412.webp){: .not-prose .mb-0 .lazy"}](/assets/images/photos/00483F51-F986-47AE-8C79-1B338F919412.webp)
 [![photo by Josh Chernoff](/assets/images/photos/scaled/57FB3852-67B4-44A5-A224-4EB198EFF66F.webp){: .mb-0 .lazy loading="lazy"}](/assets/images/photos/57FB3852-67B4-44A5-A224-4EB198EFF66F.webp)
 [![photo by Josh Chernoff](/assets/images/photos/scaled/B721A2C2-9AA6-4FAF-8DA2-3727293798BF.webp){: .mb-0 .lazy loading="lazy"}](/assets/images/photos/B721A2C2-9AA6-4FAF-8DA2-3727293798BF.webp)
 [![photo by Josh Chernoff](/assets/images/photos/scaled/B7C83B42-0CDA-4B00-AAB1-1CC23B5AFD3E.webp){: .mb-0 .lazy loading="lazy"}](/assets/images/photos/B7C83B42-0CDA-4B00-AAB1-1CC23B5AFD3E.webp)
