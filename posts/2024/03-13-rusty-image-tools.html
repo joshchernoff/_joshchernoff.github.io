@@ -195,6 +195,33 @@
 </p>
 <p>
 <a href="https://rustyimagetools.github.io/">https://rustyimagetools.github.io/</a></p>
+<p>
+I built a simple to use Image tool that runs completely from a statictly generated site. 
+The site it’s self is a github page that has a basic service worker that enables it to run offline and can be installed as a PWA. </p>
+<p>
+Most of the business logic was create in a rust application that compiles to a wasm application targeting the web and JS. </p>
+<h2>
+Here’s the features currently.</h2>
+<ul>
+  <li>
+PWA - Installable as stand alone app.   </li>
+  <li>
+Offline support - Works offline. (no server required)  </li>
+  <li>
+    <p>
+Privacy first | No tracking - This is a static site that runs client side only.    </p>
+  </li>
+  <li>
+It’s Fast. Writen in rust using the image and exif crates, compiled to wasm at ~4Mb.  </li>
+  <li>
+No limits (no file or size limits, scale 30Mb images in less than a few seconds on your cellphone)  </li>
+  <li>
+Supports multiple file formats  </li>
+  <li>
+Free and open source. MIT license  </li>
+  <li>
+Keep original origination, Reads in exif data to keep rotation/flip metadata  </li>
+</ul>
 
 
     </div>
